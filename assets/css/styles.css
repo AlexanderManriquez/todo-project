@@ -51,9 +51,11 @@ button:hover {
 
 #lista-tareas {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 2rem;
     padding: 1rem;
+    gap: 1rem;
 }    
 
 .tarea-card {
@@ -63,10 +65,9 @@ button:hover {
     padding: 2rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin: 1rem;
 }
 
-.tarea.completada {
+.tarea-card.completada {
     text-decoration: line-through;
     background-color: #e6ffe6;
     color: #0056b3;
