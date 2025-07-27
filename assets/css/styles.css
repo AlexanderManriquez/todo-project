@@ -48,3 +48,28 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+#lista-tareas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 1rem;
+}    
+
+.tarea-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 1rem;
+}
+
+.tarea.completada {
+    text-decoration: line-through;
+    background-color: #e6ffe6;
+    color: #0056b3;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
