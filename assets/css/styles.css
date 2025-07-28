@@ -28,6 +28,10 @@ form {
     margin-top: 2rem;
 }
 
+label {
+    display: none;
+}
+
 input, textarea {
     width: 300px;
     padding: 0.5rem;

@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <h1>ToDo App</h1>
+    <h1 id="app-title">ToDo App</h1>
 
-    <main>
-        <h2>Agrega una nueva tarea</h2>
-        <form id="agregar-tareas">
-            <input type="text" id="tarea-titulo" placeholder="Título de la tarea" required>
-            <textarea id="tarea-descripcion" placeholder="Descripción de la tarea" rows="7" required></textarea>
-            <button type="submit" id="agregar-tarea">Agregar Tarea</button>
+    <main role="main" aria-labelledby="main-title">
+        <h2 id="form-title">Agrega una nueva tarea</h2>
+        <form id="agregar-tareas" aria-labelledby="form-title">
+            <label for="tarea-titulo">Título de la tarea</label>
+            <input type="text" id="tarea-titulo" placeholder="Título de la tarea" required aria-required="true">
+            <label for="tarea-descripcion">Descripción de la tarea</label>
+            <textarea id="tarea-descripcion" placeholder="Descripción de la tarea" rows="7" required aria-required="true"></textarea>
+            <button type="submit" id="agregar-tarea" aria-label="Agregar nueva tarea">Agregar Tarea</button>
         </form>
 
-        <div id="lista-tareas"></div>
+        <div id="lista-tareas" role="region" aria-live="polite" aria-label="Lista de tareas"></div>
     </main>
     <script src="./assets/js/script.js"></script>
 </body>
